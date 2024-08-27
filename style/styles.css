@@ -1,0 +1,41 @@
+/*Paleta de cores
+.color1 { #4fadb9 };
+.color2 { #ace4ec };
+.color3 { #12888c };
+.color4 { #649aa4 };
+.color5 { #b4c4c4 };
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  background-color: black;
+  color: aliceblue;
+  height: 80px;
+}
+
+.section1{
+  background-color: rgb(34, 68, 70);
+  height: 300px;
+}
+
+.section2{
+  background-color: rgb(13, 47, 49);
+  height: 300px;
+
+}
+
+.footer{
+  background-color: rgb(42, 191, 199);
+  height: 300px;
+}
