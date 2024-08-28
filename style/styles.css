@@ -14,13 +14,13 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 20px;
   margin-bottom: 1rem;
 }
 
 .header {
-  background-color: black;
-  color: aliceblue;
+  background-color: #fff;
+  color: #12888c;
   height: 80px;
 }
 
@@ -38,4 +38,9 @@ h1 {
 .footer{
   background-color: rgb(42, 191, 199);
   height: 300px;
+}
+
+#slogan {
+  width: 40px;
+  height: 40px;
 }
