@@ -19,3 +19,5 @@ Alexandro:
 
 
 Murilo: 
+
+28/08 - adicionado correção do caminho da script, adicinado id no formulario e inicializado o javascript para cadastro
