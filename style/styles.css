@@ -13,26 +13,34 @@
   box-sizing: border-box;
 }
 
-h1 {
-  vertical-align: middle;
-}
-
+/* Estilos para o header */
 .header {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  line-height: 50px;
+  justify-content:baseline-content;
   align-items: center;
+  padding: 10px 20px;
   background-color: #ace4ec;
   color: #12888c;
   height: 80px;
-  margin: 4px;
+  margin-bottom: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+#h1-titulo {  
+  color: #12888c;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+
+}
+
 
 #slogan {
   width: 80px;
   height: 80px;
 }
+
+/* Estilos para o Formulário de cadastro */
 
 .formulario-cadastro {
   display: flex;
@@ -86,6 +94,9 @@ h1 {
   width: 200px;
 }
 
+/* Estilos para o footer */
+
+
 .footer{
   background-color: rgb(42, 191, 199);
   height: 100px;
@@ -93,3 +104,4 @@ h1 {
   position: fixed;
   bottom: 0;
 }
+  

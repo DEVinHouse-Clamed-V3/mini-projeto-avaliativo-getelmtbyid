@@ -1,0 +1,21 @@
+Dominice:
+
+28/08- Criação da estrutura do projeto com o index, styles.css, scripts.js e imagens
+
+
+Gustavo:
+
+28/08- Criação da estrutura do projeto com o index, styles.css, scripts.js e imagens
+
+
+Feipe:
+
+28/08- Criação da estrutura do projeto com o index, styles.css, scripts.js e imagens
+
+
+Alexandro: 
+
+29/08 - Trabalhado na estilização do header retirando as margens e criando estilização para o h1-titulo.
+
+
+Murilo: 
