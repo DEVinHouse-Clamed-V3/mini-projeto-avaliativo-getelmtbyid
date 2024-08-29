@@ -14,6 +14,10 @@
 }
 
 /* Estilos para o header */
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .header {
   display: flex;
   justify-content:baseline-content;
@@ -47,7 +51,7 @@
   flex-wrap: wrap;
   align-items: center;
   background-color: #CCC;
-  height: 200px;
+  height: auto;
   margin: 0 4px;
   padding: 4px;
 }
@@ -55,22 +59,53 @@
 .formulario {
   display: flex;
   align-items: flex-start;
-  height: 180px;
+  justify-content: flex-start;
+  height: auto;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .div-form{ 
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
+}
+
+.div-form label {
+  margin-left: 5px; 
+  font-size: 16px;
+}
+
+.div-form input{
+  padding: 3px;
+}
+
+#preco-form {
+  width: 75px;
+}
+
+#estoque-form {
+  width: 75px;
+}
+
+#foto-form {
+  width: 300px;
 }
 
 .div-form1 {
   margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
 }
 
 #img-form {
   height: 120px;
   width: 100px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .div-btn-form {
@@ -78,9 +113,27 @@
   flex-direction: column;
 }
 
+#btn-form {
+  width: 100px;
+  background-color: #649aa4;
+  color: #000;
+  border-radius: 8px;
+  border: 1px solid #000;
+  font-size: 16px;
+  padding: 3px;
+}
+
+#btn-form:hover {
+  background-color: #12888c;
+  color: #ace4ec;
+  border-color: #ace4ec;
+  cursor: pointer
+}
+
 .medicamentos-listados{
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -91,6 +144,7 @@
 }
 
 .card img{
+  padding: 5px;
   width: 200px;
 }
 
@@ -99,7 +153,7 @@
 
 .footer{
   background-color: rgb(42, 191, 199);
-  height: 100px;
+  height: 30px;
   width: 100%;
   position: fixed;
   bottom: 0;
