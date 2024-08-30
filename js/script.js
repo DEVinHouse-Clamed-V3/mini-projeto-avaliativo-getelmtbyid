@@ -100,6 +100,8 @@ function cadastro_formulario(event)
 
     localStorage.setItem('produtos', JSON.stringify(lista))
     }
+
+    document.getElementById('Formulario').reset();
 }
 
 // Exibir os dados Dados
