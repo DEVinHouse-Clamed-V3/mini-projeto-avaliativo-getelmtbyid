@@ -101,3 +101,44 @@ function cadastro_formulario(event)
     localStorage.setItem('produtos', JSON.stringify(lista))
     }
 }
+
+// Exibir os dados Dados
+
+
+document.addEventListener('DOMContentLoaded', mostrarProdutos);
+
+//Essa função vai exibir os produtos na tela, que foi pego no localstorage acima
+function mostrarProdutos() {
+
+    let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+
+   //Foi criado no html a Div lista-produtos que vai listar os produtos
+    const areaProdutos = document.getElementById('lista-produtos');
+
+
+    areaProdutos.innerHTML = '';
+
+
+    if (produtos.length === 0) {
+        areaProdutos.innerHTML = '<p>Nenhum produto cadastrado.</p>';
+    } else {
+
+        // esse forEach irá criar para cada produto um cartão 
+        produtos.forEach(function(produto) {
+
+            let cartaoProduto = `
+                <div class="produto-card">
+                    <img src="${produto.foto}" alt="${produto.nome}" width="100px" height="100px">
+                    <h3>${produto.nome}</h3>
+                    <p>Categoria: ${produto.categoria}</p>
+                    <p>Fabricante: ${produto.fabricante}</p>
+                    <p>Preço: R$ ${produto.preco}</p>
+                    <p>Quantidade: ${produto.quantidade}</p>
+                </div>
+            `;
+
+
+            areaProdutos.innerHTML += cartaoProduto;
+        });
+    }
+}
