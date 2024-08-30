@@ -99,5 +99,8 @@ function cadastro_formulario(event)
     lista.push(produto)
 
     localStorage.setItem('produtos', JSON.stringify(lista))
+
+    document.getElementById('Formulario').reset();
+    
     }
 }

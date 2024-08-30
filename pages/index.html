@@ -1,111 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../image/slogan.png" type="../image/slogan" />
+    <title>Farmácia</title>
+    <link rel="stylesheet" href="../style/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../image/slogan.png" type="../image/slogan">
-  <title>Farmácia</title>
-  <link rel="stylesheet" href="../style/styles.css" />
-</head>
+  <body>
+    <header class="header">
+      <img src="/image/slogan-removebg-preview.png" id="slogan" />
+      <h1 id="h1-titulo">Farmácia</h1>
+    </header>
 
-<body>
+    <div class="formulario-cadastro">
+      <div class="titulo-form">
+        <h2>Formulário de cadastro</h2>
+      </div>
 
-  <header class="header">
-    <img src="/image/slogan-removebg-preview.png" id="slogan" />
-    <h1 id="h1-titulo">Farmácia</h1>
-   
-  </header>
-
-
-  <div class="formulario-cadastro">
-    <form class="formulario" id="Formulario">
-      <div class="div-form">
-        <div class="div-form1">
+      <form class="formulario" id="Formulario">
+        <div class="div-form">
           <div>
             <label for="nome-form">Nome:</label>
-            <input type="text" id="nome-form" />
+            <input type="text" id="nome-form" placeholder="Digite o nome" />
           </div>
 
           <div>
             <label for="categoria-form">Categoria:</label>
-            <input type="text" id="categoria-form" />
+            <input
+              type="text"
+              id="categoria-form"
+              placeholder="Digite a categoria"
+            />
           </div>
 
           <div>
             <label for="fabricante-form">Fabricante:</label>
-            <input type="text" id="fabricante-form" />
+            <input
+              type="text"
+              id="fabricante-form"
+              placeholder="Digite o o fabricante"
+            />
           </div>
-        </div>
 
-        <div class="div-form1">
           <div>
             <label for="preco-form">Preço:</label>
-            <input type="number" id="preco-form" />
+            <input type="number" id="preco-form" placeholder="Digite o preço" />
           </div>
 
           <div>
             <label for="estoque-form">Quantidade em Estoque:</label>
-            <input type="number" id="estoque-form" />
+            <input
+              type="number"
+              id="estoque-form"
+              placeholder="Digite a quantidade em estoque"
+            />
           </div>
 
           <div>
             <label for="foto-form">Foto:</label>
-            <input type="url" id="foto-form">
+            <input
+              type="url"
+              id="foto-form"
+              placeholder="Digite o hiperlink da foto"
+            />
           </div>
         </div>
+
+        <div class="div-btn-form">
+          <img src="/image/medicamentoTP.jpg" id="img-form" />
+          <button type="submit" id="btn-form">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="medicamentos-listados" id="medicamentos-listados">
+      <div class="card">
+        <img src="/image/medicamentoTP.jpg" id="img-med" />
+        <h3 id="nome">Rivotril</h3>
+        <p>Categoria: <span id="categoria">Tarja Preta</span></p>
+        <p>Fabricante: <span id="fabricante">Roche</span></p>
+        <p>Preço: R$<span id="preco">29,99</span></p>
+        <p>Quantidade em Estoque: <span id="estoque">100</span></p>
       </div>
-
-
-      <div class="div-btn-form">
-        <img src="/image/medicamentoTP.jpg" id="img-form" />
-        <button type="submit" id="btn-form">Cadastrar</button>
+      <div class="card">
+        <img src="/image/medicamentoTP.jpg" id="img-med" />
+        <h3 id="nome">Rivotril</h3>
+        <p>Categoria: <span id="categoria">Tarja Preta</span></p>
+        <p>Fabricante: <span id="fabricante">Roche</span></p>
+        <p>Preço: R$<span id="preco">29,99</span></p>
+        <p>Quantidade em Estoque: <span id="estoque">100</span></p>
       </div>
-    </form>
-  </div>
-  
-  
-  <div class="medicamentos-listados" id="medicamentos-listados">
-
-    <div class="card">
-      <img src="/image/medicamentoTP.jpg" id="img-med">
-      <h3 id="nome">Rivotril</h3>
-      <p>Categoria: <span id="categoria">Tarja Preta</span></p>
-      <p>Fabricante: <span id="fabricante">Roche</span></p>
-      <p>Preço: R$<span id="preco">29,99</span></p>
-      <p>Quantidade em Estoque: <span id="estoque">100</span></p>
-    </div>
-    <div class="card">
-      <img src="/image/medicamentoTP.jpg" id="img-med">
-      <h3 id="nome">Rivotril</h3>
-      <p>Categoria: <span id="categoria">Tarja Preta</span></p>
-      <p>Fabricante: <span id="fabricante">Roche</span></p>
-      <p>Preço: R$<span id="preco">29,99</span></p>
-      <p>Quantidade em Estoque: <span id="estoque">100</span></p>
-    </div>
-    <div class="card">
-      <img src="/image/medicamentoTP.jpg" id="img-med">
-      <h3 id="nome">Rivotril</h3>
-      <p>Categoria: <span id="categoria">Tarja Preta</span></p>
-      <p>Fabricante: <span id="fabricante">Roche</span></p>
-      <p>Preço: R$<span id="preco">29,99</span></p>
-      <p>Quantidade em Estoque: <span id="estoque">100</span></p>
+      <div class="card">
+        <img src="/image/medicamentoTP.jpg" id="img-med" />
+        <h3 id="nome">Rivotril</h3>
+        <p>Categoria: <span id="categoria">Tarja Preta</span></p>
+        <p>Fabricante: <span id="fabricante">Roche</span></p>
+        <p>Preço: R$<span id="preco">29,99</span></p>
+        <p>Quantidade em Estoque: <span id="estoque">100</span></p>
+      </div>
     </div>
 
-  </div>
+    <footer class="footer">
+      <p>Footer</p>
+    </footer>
 
-
-
-
-
-
-  <footer class="footer">
-    <p>Footer</p>
-  </footer>
-
-
-
-  <script src="/js/script.js"></script>
-</body>
-
+    <script src="/js/script.js"></script>
+  </body>
 </html>

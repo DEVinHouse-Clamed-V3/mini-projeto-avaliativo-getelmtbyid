@@ -15,7 +15,8 @@ Feipe:
 
 Alexandro: 
 
-29/08 - Trabalhado na estilização do header retirando as margens e criando estilização para o h1-titulo.
+29/08 - (html/css)Trabalhado na estilização do header, estilização do formulário
+        (js) criado o limpar a linha após cadastrar
 
 
 Murilo: 
