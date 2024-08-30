@@ -17,9 +17,25 @@ Alexandro:
 
 29/08 - (html/css)Trabalhado na estilização do header, estilização do formulário
         (js) criado o limpar a linha após cadastrar
+30/09 - (js) Criado o listar produtos
+
 
 
 Murilo: 
 
 28/08 - adicionado correção do caminho da script, adicinado id no formulario e inicializado o javascript para cadastro
 29/08 - parte do cadastro no local storage pronta!
+
+
+Precisa de melhorias:
+
+        - Estilização do Listar produtos
+        - Apresentar a imagem no cadastro
+        - Apresentar a mensagem no produtos
+        - Estilizar o footer
+        - Categoria (alterar para uma lista de categorias)
+        
+Extras:
+        - Criar um alterar produtos     
+        - Criar um excluir produtos
+        - Criar Filtros
