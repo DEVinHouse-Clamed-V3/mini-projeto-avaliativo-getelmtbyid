@@ -15,9 +15,9 @@ function cadastro_formulario(event)
     if(nome === "")
         {
             document.getElementById('nome-form').style.borderColor = 'red'
-            alert('o nome nao foi informado')
+            alert('O nome do produto não foi informado!')
         }
-    else if(nome !== "") 
+    else 
     {
         document.getElementById('nome-form').style.borderColor = ''
     }
@@ -26,9 +26,9 @@ function cadastro_formulario(event)
     if(categoria === "")
         {
             document.getElementById('categoria-form').style.borderColor = 'red'
-            alert('a categoria nao foi informada')
+            alert('A categoria do produto não foi informada!')
         }
-    else if(categoria !== "") 
+    else 
     {
         document.getElementById('categoria-form').style.borderColor = ''
     }
@@ -37,9 +37,9 @@ function cadastro_formulario(event)
     if(fabricante === "")
         {
             document.getElementById('fabricante-form').style.borderColor = 'red'
-            alert('o fabricante nao foi informado')
+            alert('O fabricante do produto não foi informado!')
         }
-    else if(fabricante !== "") 
+    else 
     {
         document.getElementById('fabricante-form').style.borderColor = ''
     }
@@ -48,9 +48,9 @@ function cadastro_formulario(event)
     if(preco === "")
         {
             document.getElementById('preco-form').style.borderColor = 'red'
-            alert('o preço nao foi informado')
+            alert('O preco do produto não foi informado!')
         }
-    else if(preco !== "") 
+    else  
     {
         document.getElementById('preco-form').style.borderColor = ''
     }
@@ -59,9 +59,9 @@ function cadastro_formulario(event)
     if(quantidade === "")
         {
             document.getElementById('estoque-form').style.borderColor = 'red'
-            alert('a quantidade nao foi informada')
+            alert('A quantidade do produto não foi informada!')
         }
-    else if(quantidade !== "") 
+    else 
     {
         document.getElementById('estoque-form').style.borderColor = ''
     }
@@ -70,16 +70,16 @@ function cadastro_formulario(event)
     if(foto === "")
         {
             document.getElementById('foto-form').style.borderColor = 'red'
-            alert('a foto nao foi informada')
+            alert('A foto do produto não foi informada!')
         }
-    else if(foto !== "") 
+    else  
     {
         document.getElementById('foto-form').style.borderColor = ''
     }
 
     //checagem para vericar se pode as informações sao validas para salvar no local storage
 
-    if(nome && categoria && fabricante && preco && quantidade && foto !== "")
+    if(nome && categoria&& fabricante&& preco && quantidade && foto !== "")
     {
     const produto = 
     {
@@ -99,49 +99,5 @@ function cadastro_formulario(event)
     lista.push(produto)
 
     localStorage.setItem('produtos', JSON.stringify(lista))
-
-    document.getElementById('Formulario').reset();
-    
-    }
-}
-
-// Exibir os dados Dados
-
-
-document.addEventListener('DOMContentLoaded', mostrarProdutos);
-
-//Essa função vai exibir os produtos na tela, que foi pego no localstorage acima
-function mostrarProdutos() {
-    
-    let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
-    
-   //Foi criado no html a Div lista-produtos que vai listar os produtos
-    const areaProdutos = document.getElementById('lista-produtos');
-
-    
-    areaProdutos.innerHTML = '';
-
-   
-    if (produtos.length === 0) {
-        areaProdutos.innerHTML = '<p>Nenhum produto cadastrado.</p>';
-    } else {
-        
-        // esse forEach irá criar para cada produto um cartão 
-        produtos.forEach(function(produto) {
-           
-            let cartaoProduto = `
-                <div class="produto-card">
-                    <img src="${produto.foto}" alt="${produto.nome}" width="100px" height="100px">
-                    <h3>${produto.nome}</h3>
-                    <p>Categoria: ${produto.categoria}</p>
-                    <p>Fabricante: ${produto.fabricante}</p>
-                    <p>Preço: R$ ${produto.preco}</p>
-                    <p>Quantidade: ${produto.quantidade}</p>
-                </div>
-            `;
-            
-            
-            areaProdutos.innerHTML += cartaoProduto;
-        });
     }
 }
