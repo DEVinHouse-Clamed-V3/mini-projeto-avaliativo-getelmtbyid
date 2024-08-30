@@ -179,7 +179,7 @@ body {
 #lista-produtos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .produto-card {
@@ -202,10 +202,18 @@ body {
 
 .footer {
   background-color: rgb(42, 191, 199);
-  height: 30px;
+  height: 100px;
   width: 100%;
+  padding-top: 10px;
   position: fixed;
   bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.footer div
+{
+  font-weight:500;
 }
 
 /*RESPONSIVIDADE*/
