@@ -136,8 +136,8 @@ body {
   padding-right: 1px;
 }
 
-#btn-form {
-  width: 150px;
+.btn {
+  
   background-color: #74959b;
   color: #ffffff;
   border-radius: 8px;
@@ -147,12 +147,36 @@ body {
   text-align: center;
 }
 
-#btn-form:hover {
+.btn-danger {
+  background-color: #ef5056b9;
+  color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #c61e1e;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+}
+
+#btn-form {
+  width: 150px;
+}
+
+
+.btn:hover {
   background-color: #12888c;
   color: #ace4ec;
   border-color: #ace4ec;
   cursor: pointer;
 }
+
+.btn-danger:hover {
+  background-color: #f50505;
+  color: #FFF;
+  border-color: #c61e1e;
+  cursor: pointer;
+}
+
+
 
 /* Medicamentos*/
 
@@ -197,7 +221,17 @@ body {
   margin-bottom: 10px;
 }
 
+.produto-card h3 {
+  margin-bottom: 5px;
+}
 
+.produto-card .btn{
+  margin-top: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
 /* Estilos para o footer */
 
 .footer {

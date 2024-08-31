@@ -27,15 +27,22 @@ Murilo:
 29/08 - parte do cadastro no local storage pronta!
 
 
+
+Dominice:
+
+30/08 - funçao carregarProdutosIniciais, indentação do js, - Apresentar a imagem no cadastro, - Criar um alterar produtos,
+- Estilização do Listar produtos
+
+
+
+
 Precisa de melhorias:
 
-        - Estilização do Listar produtos
-        - Apresentar a imagem no cadastro
         - Apresentar a mensagem no produtos
         - Estilizar o footer
         - Categoria (alterar para uma lista de categorias)
         
 Extras:
-        - Criar um alterar produtos     
+             
         - Criar um excluir produtos
         - Criar Filtros

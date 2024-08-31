@@ -23,6 +23,9 @@
       </div>
 
       <form class="formulario" id="Formulario">
+
+        <input type="hidden" id="id-form"/>
+
         <div class="div-form">
           <div>
             <label for="nome-form">Nome:</label>
@@ -74,8 +77,8 @@
         </div>
 
         <div class="div-btn-form">
-          <img src="/image/medicamentoTP.jpg" id="img-form" />
-          <button type="submit" id="btn-form">Cadastrar</button>
+          <img src="/image/img-med-generico.png" id="img-form" />
+          <button type="submit" class="btn" id="btn-form">Salvar</button>
         </div>
       </form>
     </div>
@@ -83,7 +86,7 @@
     <!--Listar os produtos -->
     
     <div class="titulo-form">
-      <h2>Listar Produtos</h2>
+      <h2>Listagem Produtos</h2>
     </div>
     <div id="lista-produtos"></div>
 <!--
@@ -95,25 +98,11 @@
         <p>Fabricante: <span id="fabricante">Roche</span></p>
         <p>Preço: R$<span id="preco">29,99</span></p>
         <p>Quantidade em Estoque: <span id="estoque">100</span></p>
+        <button onclick="editarProduto(id)">Editar</button>
+        <button>Excluir</button>
       </div>
-      <div class="card">
-        <img src="/image/medicamentoTP.jpg" id="img-med" />
-        <h3 id="nome">Rivotril</h3>
-        <p>Categoria: <span id="categoria">Tarja Preta</span></p>
-        <p>Fabricante: <span id="fabricante">Roche</span></p>
-        <p>Preço: R$<span id="preco">29,99</span></p>
-        <p>Quantidade em Estoque: <span id="estoque">100</span></p>
-      </div>
-      <div class="card">
-        <img src="/image/medicamentoTP.jpg" id="img-med" />
-        <h3 id="nome">Rivotril</h3>
-        <p>Categoria: <span id="categoria">Tarja Preta</span></p>
-        <p>Fabricante: <span id="fabricante">Roche</span></p>
-        <p>Preço: R$<span id="preco">29,99</span></p>
-        <p>Quantidade em Estoque: <span id="estoque">100</span></p>
-      </div>
-    </div>
   -->
+
   <!--Rodapé da página-->
     <footer class="footer">
       <div>
@@ -137,7 +126,6 @@
         <p>Oferecendo preços acessiveis e uma alta variedade de produtos!</p>
       </div>
     </footer>
-
-    <script src="/js/script.js"></script>
+    <script type="module" src="/js/script.js"></script>
   </body>
 </html>
