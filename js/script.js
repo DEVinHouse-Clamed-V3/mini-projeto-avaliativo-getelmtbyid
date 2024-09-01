@@ -122,10 +122,13 @@ function mostrarProdutos() {
                     <p><span class="label"> Fabricante:</span> ${produto.fabricante}</p>
                     <p><span class="label">Preço:</span> R$ ${produto.preco}</p>
                     <p><span class="label">Quantidade:</span> ${produto.quantidade}</p>
-                    <button onclick="editarProduto(${produto.id})" class="btn">Editar</button>
-                    <button onclick="excluirProduto(${produto.id})" class="btn-danger">Deletar</button>
+                    <div class="btn-container">
+                        <button onclick="editarProduto(${produto.id})" class="btn">Editar</button>
+                        <button onclick="excluirProduto(${produto.id})" class="btn-danger">Deletar</button>
+                    </div>
                 </div>
             `;
+
 
             areaProdutos.innerHTML += cartaoProduto;
         });
@@ -173,3 +176,19 @@ function editarProduto(id) {
 }
 
 window.editarProduto = editarProduto
+
+// função para excluir um produto do LocalStorage
+
+function excluirProduto(id) {
+
+    let produtos = JSON.parse(localStorage.getItem('produtos')) || []
+
+    produtos = produtos.filter(produto => produto.id !== id)
+
+    localStorage.setItem('produtos', JSON.stringify(produtos))
+
+    mostrarProdutos()
+
+}
+
+window.excluirProduto = excluirProduto;

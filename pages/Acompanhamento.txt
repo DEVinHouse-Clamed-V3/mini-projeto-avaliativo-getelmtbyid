@@ -12,7 +12,8 @@ Feipe:
 
 28/08- Criação da estrutura do projeto com o index, styles.css, scripts.js e imagens
 29/08 - Estilização do formulário e cards.
-01/09 - Estilização do footer
+01/09 - Estilização do footer e botoes editar e deletar nos cards.
+      - Função excluirProduto
 
 
 Alexandro: 
