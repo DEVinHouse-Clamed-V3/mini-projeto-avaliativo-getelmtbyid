@@ -11,6 +11,8 @@ Gustavo:
 Feipe:
 
 28/08- Criação da estrutura do projeto com o index, styles.css, scripts.js e imagens
+29/08 - Estilização do formulário e cards.
+01/09 - Estilização do footer
 
 
 Alexandro: 
@@ -39,7 +41,6 @@ Dominice:
 Precisa de melhorias:
 
         - Apresentar a mensagem no produtos
-        - Estilizar o footer
         - Categoria (alterar para uma lista de categorias)
         
 Extras:

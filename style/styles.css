@@ -19,7 +19,6 @@ body {
 
 .header {
   display: flex;
-  justify-content: baseline-content;
   align-items: center;
   padding: 10px 20px;
   background-color: #ace4ec;
@@ -235,19 +234,50 @@ body {
 /* Estilos para o footer */
 
 .footer {
-  background-color: rgb(42, 191, 199);
-  height: 100px;
-  width: 100%;
-  padding-top: 10px;
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: space-evenly;
+  background-color: #4fadb9;
+  padding: 10px 0;
   color: white;
 }
-.footer div
-{
-  font-weight:500;
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 10px;
+  border-top: 1px solid #ace4ec;
+}
+
+.footer a:hover {
+  color: #ace4ec;
 }
 
 /*RESPONSIVIDADE*/
@@ -311,6 +341,23 @@ body {
   }
 }
 
+/* Responsividade do footer*/
 
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+  }
+}
 
 

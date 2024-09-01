@@ -119,14 +119,13 @@ function mostrarProdutos() {
                     <img src="${produto.foto}" alt="${produto.nome}" width="100px" height="100px">
                     <h3>${produto.nome}</h3>
                     <p><span class="label">Categoria:</span> ${produto.categoria}</p>
-                    <p><span class="label"> Fabricante:</span>Fabricante: ${produto.fabricante}</p>
+                    <p><span class="label"> Fabricante:</span> ${produto.fabricante}</p>
                     <p><span class="label">Preço:</span> R$ ${produto.preco}</p>
                     <p><span class="label">Quantidade:</span> ${produto.quantidade}</p>
                     <button onclick="editarProduto(${produto.id})" class="btn">Editar</button>
                     <button onclick="excluirProduto(${produto.id})" class="btn-danger">Deletar</button>
                 </div>
             `;
-
 
             areaProdutos.innerHTML += cartaoProduto;
         });
@@ -170,10 +169,6 @@ function editarProduto(id) {
     document.getElementById('img-form').setAttribute('src', produtoEditar.foto)
 
     document.getElementById('id-form').value = produtoEditar.id
-
-
-
-
 
 }
 
