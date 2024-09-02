@@ -203,7 +203,7 @@ function excluirProduto(id) {
 window.excluirProduto = excluirProduto;
 
 
-// Resumo que essa função faz, ele cria um locastorage temporário para colocar os produtos filtratos e exibe em tela, quando clica em limpar ele exclui o temporário e dar um reload.
+// Resumo que essa função faz, ele cria um localstorage temporário para colocar os produtos filtratos e exibe em tela, quando clicar em limpar ele exclui o temporário e dar um refresh na tela.
 
 function filtrarProdutos() {
     const nomeFiltro = document.getElementById('filtro-nome').value.toLowerCase();
