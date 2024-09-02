@@ -22,6 +22,7 @@ Alexandro:
         (js) criado o limpar a linha após cadastrar
 30/09 - (js) Criado o listar produtos
 01/09 - Alterado a categoria de input para select, alterado o css do .produto-card h3 para quebrar a linha quando o texto preencher o card.
+02-09 - Criado o Filtrar produtos filtrando pelo nome e fabricante.
 
 
 Murilo: 
@@ -41,9 +42,8 @@ Dominice:
 
 Precisa de melhorias:
 
-     
-        
+        - Estilizar o Filtro
         
 Extras:
                  
-        - Criar Filtros
+       

@@ -203,4 +203,66 @@ function excluirProduto(id) {
 window.excluirProduto = excluirProduto;
 
 
+// Resumo que essa função faz, ele cria um locastorage temporário para colocar os produtos filtratos e exibe em tela, quando clica em limpar ele exclui o temporário e dar um reload.
+
+function filtrarProdutos() {
+    const nomeFiltro = document.getElementById('filtro-nome').value.toLowerCase();
+    const fabricanteFiltro = document.getElementById('filtro-fabricante').value.toLowerCase();
+
+    let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+
+    let produtosFiltrados = produtos.filter(produto => {
+        const nomeInclui = produto.nome.toLowerCase().includes(nomeFiltro);
+        const fabricanteInclui = produto.fabricante.toLowerCase().includes(fabricanteFiltro);
+
+        // Combinações para o filtro funcionar
+        if (nomeFiltro && fabricanteFiltro) {
+            return nomeInclui && fabricanteInclui;
+        } else if (nomeFiltro) {
+            return nomeInclui;
+        } else if (fabricanteFiltro) {
+            return fabricanteInclui;
+        } else {
+            return true; 
+        }
+     
+    });
+
+    
+    localStorage.setItem('produtosFiltrados', JSON.stringify(produtosFiltrados));
+
+    
+    mostrarProdutosFiltrados();
+}
+
+
+function mostrarProdutosFiltrados() {
+    let produtosFiltrados = JSON.parse(localStorage.getItem('produtosFiltrados')) || [];
+    
+    
+    localStorage.setItem('produtos', JSON.stringify(produtosFiltrados));
+    
+    
+    mostrarProdutos();
+    
+    
+    localStorage.setItem('produtos', JSON.stringify(produtosFiltrados));
+}
+
+
+document.getElementById('btn-pesquisar').addEventListener('click', filtrarProdutos);
+document.getElementById('btn-limpar').addEventListener('click', function() {
+    document.getElementById('filtro-nome').value = '';
+    document.getElementById('filtro-fabricante').value = '';
+   
+    // Remover o local storage criado temporaio 
+    localStorage.removeItem('produtosFiltrados');
+    
+    mostrarProdutos(); 
+    // Restaura os produtos originais no localStorage
+    localStorage.setItem('produtos', JSON.stringify(produtosIniciais));
+
+    // Refresh na pagina
+    location.reload();
+});
 
