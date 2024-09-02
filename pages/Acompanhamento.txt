@@ -21,7 +21,7 @@ Alexandro:
 29/08 - (html/css)Trabalhado na estilização do header, estilização do formulário
         (js) criado o limpar a linha após cadastrar
 30/09 - (js) Criado o listar produtos
-
+01/09 - Alterado a categoria de input para select, alterado o css do .produto-card h3 para quebrar a linha quando o texto preencher o card.
 
 
 Murilo: 
@@ -41,10 +41,9 @@ Dominice:
 
 Precisa de melhorias:
 
-        - Apresentar a mensagem no produtos
-        - Categoria (alterar para uma lista de categorias)
+     
+        
         
 Extras:
-             
-        - Criar um excluir produtos
+                 
         - Criar Filtros

@@ -1,11 +1,15 @@
+
+
 import produtosIniciais from "./produtos.json" with {type: "json"}
 
+// Cadastro do produto
 
 function cadastro_formulario(event) {
     event.preventDefault()
     //pegando variaveis
     const nome = document.getElementById('nome-form').value
-    const categoria  = document.getElementById('categoria-form').value
+    const categoria = document.getElementById('categoria-form').value;
+    //const categoria  = document.getElementById('categoria-form')
     const fabricante = document.getElementById('fabricante-form').value
     const preco = document.getElementById('preco-form').value
     const quantidade = document.getElementById('estoque-form').value
@@ -96,6 +100,7 @@ document.getElementById('Formulario').addEventListener('submit', cadastro_formul
 
 
 //Essa função vai exibir os produtos na tela, que foi pego no localstorage acima
+
 function mostrarProdutos() {
 
     let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
@@ -138,6 +143,8 @@ function mostrarProdutos() {
 document.addEventListener('DOMContentLoaded', mostrarProdutos);
 
 
+
+
 // carregando produdosIniciais vindos do json
 
 function carregarProdutosIniciais () {
@@ -158,6 +165,8 @@ document.getElementById("foto-form").addEventListener("input", function (event) 
 })
 
 
+//Edição dos produtos
+
 function editarProduto(id) {
     const produtos = JSON.parse(localStorage.getItem('produtos')) || []
     const produtoEditar = produtos.find(produto => produto.id === id)
@@ -177,7 +186,7 @@ function editarProduto(id) {
 
 window.editarProduto = editarProduto
 
-// função para excluir um produto do LocalStorage
+// Excluir um produto do LocalStorage
 
 function excluirProduto(id) {
 
@@ -192,3 +201,6 @@ function excluirProduto(id) {
 }
 
 window.excluirProduto = excluirProduto;
+
+
+

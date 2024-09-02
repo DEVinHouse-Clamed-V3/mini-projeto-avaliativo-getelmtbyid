@@ -116,6 +116,7 @@ body {
   width: 100%;
 }
 
+
 #img-form {
   height: 150px;
   width: 150px;
@@ -238,7 +239,7 @@ body {
   margin-bottom: 5px;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal; 
   width: 100%;
 }
 
@@ -389,5 +390,6 @@ body {
     font-size: 24px;
   }
 }
+
 
 

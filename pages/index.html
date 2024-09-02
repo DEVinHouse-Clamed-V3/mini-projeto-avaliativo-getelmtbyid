@@ -33,11 +33,24 @@
 
           <div>
             <label for="categoria-form">Categoria:</label>
-            <input
-              type="text"
-              id="categoria-form"
-              placeholder="Digite a categoria"
-            />
+            <select class="categoria-form" id="categoria-form">
+              <option value="">Selecione uma categoria</option>
+              <option value="Categoria1">Antibioticos</option>
+              <option value="Categoria2">Analgesicos e Antipiréticos</option>
+              <option value="Categoria3">Antissépticos e Desinfetantes</option>
+              <option value="Categoria4">Antiinflamatório</option>
+              <option value="Categoria5">Controlados</option>
+              <option value="Categoria6">Cuidados com a Pele</option>
+              <option value="Categoria7">Cuidados para Bebês e Crianças</option>
+              <option value="Categoria8">Cuidados para a Mulher</option>
+              <option value="Categoria9">Cuidado com os Cabelos</option>
+              <option value="Categoria10">Cuidado com os Olhos</option>
+              <option value="Categoria11">Dermatológicos</option>
+              <option value="Categoria12">Medicamentos para Digestão</option>
+              <option value="Categoria13">Pressão Alta</option>
+              <option value="Categoria14">Vitaminas e Suplementos</option>            
+        
+            </select>
           </div>
 
           <div>
@@ -80,28 +93,16 @@
       </form>
     </div>
 
-    <!--Listar os produtos -->
+    <!--Filtro os produtos -->
 
-    <div class="titulo-form">
+    
+   <!--Listar os produtos -->
+
+     <div class="titulo-form">
       <h2>Listagem Produtos</h2>
     </div>
     <div id="lista-produtos"></div>
-    <!--
-    <div class="medicamentos-listados" id="medicamentos-listados">
-      <div class="card">
-        <img src="/image/medicamentoTP.jpg" id="img-med" />
-        <h3 id="nome">Rivotril</h3>
-        <p>Categoria: <span id="categoria">Tarja Preta</span></p>
-        <p>Fabricante: <span id="fabricante">Roche</span></p>
-        <p>Preço: R$<span id="preco">29,99</span></p>
-        <p>Quantidade em Estoque: <span id="estoque">100</span></p>
-        <div class="btn-container">
-          <button onclick="editarProduto(id)">Editar</button>
-          <button>Excluir</button>
-        </div>
-      </div>
-  -->
-
+  
     <!--Rodapé da página-->
     <footer class="footer">
       <div class="footer-content">
