@@ -28,6 +28,7 @@ Alexandro:
 30/09 - (js) Criado o listar produtos
 01/09 - Alterado a categoria de input para select, alterado o css do .produto-card h3 para quebrar a linha quando o texto preencher o card.
 02-09 - Criado o Filtrar produtos filtrando pelo nome e fabricante.
+03/09 - Criado o readme do projeto
 
 
 Murilo: 
