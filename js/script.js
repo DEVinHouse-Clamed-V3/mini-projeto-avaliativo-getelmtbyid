@@ -1,4 +1,5 @@
-import produtosIniciais from "./produtos.json" with {type: "json"}
+//import produtosIniciais from "./produtos.json" with {type: "json"}
+
 
 // Cadastro do produto
 function cadastroFormulario(event) {
@@ -127,7 +128,7 @@ function mostrarProdutos() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", mostrarProdutos);
+//document.addEventListener("DOMContentLoaded", mostrarProdutos);
 
 // carregando produdosIniciais vindos do json
 
@@ -136,11 +137,17 @@ function carregarProdutosIniciais() {
 
   // verifica se a lista está vazia para preencher os produtos iniciais no localStorage
   if (produtos.length === 0) {
-    localStorage.setItem("produtos", JSON.stringify(produtosIniciais));
+    fetch("https://raw.githubusercontent.com/DEVinHouse-Clamed-V3/mini-projeto-avaliativo-getelmtbyid/main/js/produtos.json")
+      .then((response) => response.json())
+      .then((produtosIniciais) => {
+        localStorage.setItem("produtos", JSON.stringify(produtosIniciais));
+        mostrarProdutos()
+      });
   }
 }
 
 carregarProdutosIniciais();
+
 
 document.getElementById("foto-form").addEventListener("input", function (event) {
   document.getElementById("img-form").setAttribute("src", this.value);
