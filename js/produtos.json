@@ -4,7 +4,7 @@
         "nome": "Amoxicilina + Clavulanato De Potassio Sandoz Com 21 Cp 500/125mg Gen",
         "categoria": "Antibioticos",
         "fabricante": "Sandoz",
-        "preco": "65",
+        "preco": "65.00",
         "quantidade": "50",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/184650-800-899?v=637817603868100000&width=800&height=899&aspect=true"
     },
@@ -13,7 +13,7 @@
         "nome": "Azitromicina Medley 500mg Com 5 Comprimidos",
         "categoria": "Antibioticos",
         "fabricante": "Sanofi",
-        "preco": "25",
+        "preco": "25.00",
         "quantidade": "159",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/184511-800-899?v=637817429802900000&width=800&height=899&aspect=true"
     },
@@ -22,7 +22,7 @@
         "nome": "Zolpidem Ems Com 30 Comprimidos Revestidos 10mg Generico",
         "categoria": "Controlados",
         "fabricante": "Ems",
-        "preco": "30",
+        "preco": "30.00",
         "quantidade": "67",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/186647-800-899?v=638043076255200000&width=800&height=899&aspect=true"
     },
@@ -31,7 +31,7 @@
         "nome": "Sertralina Eurofarma 25mg Com 30 Comprimidos",
         "categoria": "Controlados",
         "fabricante": "Eurofarma",
-        "preco": "30",
+        "preco": "30.50",
         "quantidade": "124",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/186140-800-899?v=637829686199300000&width=800&height=899&aspect=true"
     },
@@ -40,7 +40,7 @@
         "nome": "Buscopan Composto Com 20 Comprimidos Revestidos",
         "categoria": "Aparelho Digestivo",
         "fabricante": "Boehringer Ingelheim",
-        "preco": "22",
+        "preco": "22.50",
         "quantidade": "269",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/213967-800-899?v=638539002579400000&width=800&height=899&aspect=true"
     },
@@ -49,7 +49,7 @@
         "nome": "Sal De Fruta Eno Laranja, Alivio Rapido Da Azia 2 Saches Com 5g Cada",
         "categoria": "Aparelho Digestivo",
         "fabricante": "Eno",
-        "preco": "4",
+        "preco": "4.00",
         "quantidade": "450",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/197388-800-899?v=638060340096370000&width=800&height=899&aspect=true"
     },
@@ -58,7 +58,7 @@
         "nome": "Naproxeno Teuto Com 10 Comprimidos 500mg Generico",
         "categoria": "Antiinflamatório",
         "fabricante": "Teuto",
-        "preco": "9",
+        "preco": "9.00",
         "quantidade": "87",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/196742-800-899?v=638046539519330000&width=800&height=899&aspect=true"
     },
@@ -67,7 +67,7 @@
         "nome": "Cataflam Pro Xt 2% Emulgel 100g",
         "categoria": "Antiinflamatório",
         "fabricante": "Novartis",
-        "preco": "66",
+        "preco": "66.00",
         "quantidade": "187",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/178908-800-899?v=637589283299700000&width=800&height=899&aspect=true"
     },
@@ -76,7 +76,7 @@
         "nome": "Losartana 50mg Neo Química Com 30 Comprimidos",
         "categoria": "Pressão Alta",
         "fabricante": "Neo Quimica",
-        "preco": "6",
+        "preco": "6.00",
         "quantidade": "102",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/210344-800-899?v=638410204371570000&width=800&height=899&aspect=true"
     },
@@ -85,7 +85,7 @@
         "nome": "Enalapril Neo Quimica 10mg Com 30 Comprimidos",
         "categoria": "Pressao Alta",
         "fabricante": "Neo Quimica",
-        "preco": "5",
+        "preco": "5.00",
         "quantidade": "200",
         "foto": "https://precopopular.vtexassets.com/arquivos/ids/210280-800-899?v=638410029535200000&width=800&height=899&aspect=true"
     }
