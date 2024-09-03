@@ -33,7 +33,8 @@ O projeto foi desenvolvido de forma colaborativa pelos seguintes integrantes:
 
 Cada integrante do Squad contribuiu de maneira ativa para a construção da página, aplicando os conhecimentos adquiridos nas aulas. A seguir está uma captura de tela da interface do projeto:
 
-<img src="./image/image.png alt="Print do sistema">
+
+<img width="936" alt="Projeto" src="https://github.com/user-attachments/assets/15efe111-99bd-429a-a0f5-9545353ee96f">
 
 
 ##  Como Executar
