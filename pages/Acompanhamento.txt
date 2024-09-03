@@ -1,14 +1,19 @@
 Dominice:
 
 28/08- Criação da estrutura do projeto com o index, styles.css, scripts.js e imagens
+30/08 - funçao carregarProdutosIniciais, indentação do js, - Apresentar a imagem no cadastro, - Criar um alterar produtos,
+- Estilização do Listar produtos
 
 
 Gustavo:
 
 28/08- Criação da estrutura do projeto com o index, styles.css, scripts.js e imagens
+02/09 - (all) Ajuste da indentação, ajuste favicon
+        (css) estilização do Filtro
+        (js) manutenção função filtro (implementação categoria)
 
 
-Feipe:
+Felipe:
 
 28/08- Criação da estrutura do projeto com o index, styles.css, scripts.js e imagens
 29/08 - Estilização do formulário e cards.
@@ -28,22 +33,5 @@ Alexandro:
 Murilo: 
 
 28/08 - adicionado correção do caminho da script, adicinado id no formulario e inicializado o javascript para cadastro
-29/08 - parte do cadastro no local storage pronta!
-
-
-
-Dominice:
-
-30/08 - funçao carregarProdutosIniciais, indentação do js, - Apresentar a imagem no cadastro, - Criar um alterar produtos,
-- Estilização do Listar produtos
-
-
-
-
-Precisa de melhorias:
-
-        - Estilizar o Filtro
-        
-Extras:
-                 
+29/08 - parte do cadastro no local storage pronta!      
        

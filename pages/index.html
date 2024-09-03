@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../image/slogan.png" type="../image/png" />
     <title>Farmácia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="../style/styles.css" />
+    <link rel="shortcut icon" href="/image/favicon.ico"" type="image/x-icon">
   </head>
 
   <body>
     <!--Header da página-->
     <header class="header">
-      <img src="/image/slogan-removebg-preview.png" id="slogan" />
+      <img src="/image/slogan.png" id="slogan" />
       <h1 id="h1-titulo">Farmácia</h1>
     </header>
     <!-- Formúlario para o cadastro dos produtos -->
@@ -48,18 +49,14 @@
               <option value="Dermatológicos">Dermatológicos</option>
               <option value="Medicamentos para Digestão">Medicamentos para Digestão</option>
               <option value="Pressão Alta">Pressão Alta</option>
-              <option value="Vitaminas e Suplementos">Vitaminas e Suplementos</option>            
+              <option value="Vitaminas e Suplementos">Vitaminas e Suplementos</option>
               <option value="Outros">Outros</option>
             </select>
           </div>
 
           <div>
             <label for="fabricante-form">Fabricante:</label>
-            <input
-              type="text"
-              id="fabricante-form"
-              placeholder="Digite o o fabricante"
-            />
+            <input type="text" id="fabricante-form" placeholder="Digite o o fabricante" />
           </div>
 
           <div>
@@ -69,20 +66,12 @@
 
           <div>
             <label for="estoque-form">Quantidade em Estoque:</label>
-            <input
-              type="number"
-              id="estoque-form"
-              placeholder="Digite a quantidade em estoque"
-            />
+            <input type="number" id="estoque-form" placeholder="Digite a quantidade em estoque" />
           </div>
 
           <div>
             <label for="foto-form">Foto:</label>
-            <input
-              type="url"
-              id="foto-form"
-              placeholder="Digite o hiperlink da foto"
-            />
+            <input type="url" id="foto-form" placeholder="Digite o hiperlink da foto" />
           </div>
         </div>
 
@@ -94,11 +83,13 @@
     </div>
 
     <!--Filtro os produtos -->
-    
-    <div class="filtro-produtos">
-      <h2>Filtrar Produtos</h2>
-      <form id="filtro-form">
-        <div class="div-form">
+
+    <div class="formulario-filtro">
+      <div class="titulo-filtro">
+        <h2>Filtrar Produtos</h2>
+      </div>
+      <form class="filtro">
+        <div class="div-filtro">
           <div>
             <label for="filtro-nome">Nome:</label>
             <input type="text" id="filtro-nome" placeholder="Pesquise pelo nome do produto" />
@@ -107,26 +98,34 @@
             <label for="filtro-fabricante">Fabricante:</label>
             <input type="text" id="filtro-fabricante" placeholder="Pesquise pelo fabricante do produto" />
           </div>
+          <div>
+            <label for="filtro-categoria">Categoria:</label>
+            <input type="text" id="filtro-categoria" placeholder="Pesquise pela categoria do produto" />
+          </div>
+        </div>
+        <div class="div-btn-form">
           <button type="button" class="btn" id="btn-pesquisar">Pesquisar</button>
           <button type="button" class="btn" id="btn-limpar">Limpar Pesquisa</button>
         </div>
       </form>
     </div>
-    
-    
-   <!--Listar os produtos -->
 
-     <div class="titulo-form">
+    <!--Listar os produtos -->
+
+    <div class="titulo-form">
       <h2>Listagem Produtos</h2>
     </div>
     <div id="lista-produtos"></div>
-  
+
     <!--Rodapé da página-->
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section about">
           <h3>Sobre Nós</h3>
-          <p>A equipe Farmacia se compremete no fornecimento de serviços de alta qualidade visando a satisfação de nossos clientes. Oferecendo preços acessiveis e uma alta variedade de produtos!</p>
+          <p>
+            A equipe Farmacia se compremete no fornecimento de serviços de alta qualidade visando a satisfação de nossos clientes. Oferecendo preços
+            acessiveis e uma alta variedade de produtos!
+          </p>
         </div>
         <div class="footer-section contact">
           <h3>Contato</h3>
@@ -142,9 +141,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        &copy; 2024 Farmácia. Todos os direitos reservados.
-      </div>
+      <div class="footer-bottom">&copy; 2024 Farmácia. Todos os direitos reservados.</div>
     </footer>
 
     <script type="module" src="/js/script.js"></script>

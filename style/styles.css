@@ -43,7 +43,8 @@ body {
 
 /* Estilos para o Formulário de cadastro */
 
-.formulario-cadastro {
+.formulario-cadastro,
+.formulario-filtro {
   display: flex;
   justify-content: space-btween;
   align-items: center;
@@ -52,19 +53,19 @@ body {
   flex-wrap: wrap;
   margin: 20px auto;
   width: 80%;
-  
 }
 
-.titulo-form {
- 
+.titulo-form,
+.titulo-filtro {
   color: #12888c;
   font-size: 25px;
   margin-bottom: 20px;
-  text-align: center; 
-  width: 100%; 
+  text-align: center;
+  width: 100%;
 }
 
-.formulario {
+.formulario,
+.filtro {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -73,9 +74,8 @@ body {
   justify-content: space-evenly;
 }
 
-
-.div-form {
- 
+.div-form,
+.div-filtro {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
@@ -84,20 +84,24 @@ body {
   justify-content: space-around;
   flex-direction: row;
 }
+
 /* deixar os inputs dividido no mesmo tamanho*/
-.div-form div {
+.div-form div,
+.div-filtro div {
   display: flex;
   flex-direction: column;
   width: calc(50% - 10px);
 }
 
-.div-form label {
+.div-form label,
+.div-filtro label {
   font-size: 15px;
   margin-bottom: 5px;
   color: #0e3536;
 }
 
-.div-form input {
+.div-form input,
+.div-filtro input {
   padding: 3px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -115,7 +119,6 @@ body {
   height: 25px;
   width: 100%;
 }
-
 
 #img-form {
   height: 150px;
@@ -137,7 +140,6 @@ body {
 }
 
 .btn {
-  
   background-color: #74959b;
   color: #ffffff;
   border-radius: 8px;
@@ -165,7 +167,6 @@ body {
   width: 150px;
 }
 
-
 .btn:hover {
   background-color: #12888c;
   color: #ace4ec;
@@ -175,14 +176,12 @@ body {
 
 .btn-danger:hover {
   background-color: #f50505;
-  color: #FFF;
+  color: #fff;
   border-color: #c61e1e;
   cursor: pointer;
 }
 
 /* Filtros */
-
-
 
 /* Medicamentos*/
 
@@ -203,7 +202,6 @@ body {
   padding: 5px;
   width: 200px;
 }
-
 
 /*Mostar produto*/
 #lista-produtos {
@@ -241,7 +239,7 @@ body {
   margin-bottom: 5px;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: normal; 
+  white-space: normal;
   width: 100%;
 }
 
@@ -249,12 +247,11 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-
 }
 
-.produto-card .btn{
-  flex: 1; 
-  margin: 5px; 
+.produto-card .btn {
+  flex: 1;
+  margin: 5px;
   padding: 10px;
   text-align: center;
   max-width: 120px;
@@ -351,26 +348,29 @@ body {
 
 /*Responsividade do formulário*/
 @media (max-width: 768px) {
-  .div-form div {
+  .div-form div,
+  .div-filtro div {
     width: 100%;
   }
 
   .div-btn-form {
     width: 100%;
     align-items: center;
+    gap: 10px;  
   }
 }
+
 /* Responsividade do listar produtos*/
 
 @media (max-width: 780px) {
   .produto-card {
-      width: calc(50% - 20px); /* 2 produtos por linha em telas menores */
+    width: calc(50% - 20px); /* 2 produtos por linha em telas menores */
   }
 }
 
 @media (max-width: 480px) {
   .produto-card {
-      width: 100%; /* 1 produto por linha em telas pequenas */
+    width: 100%; /* 1 produto por linha em telas pequenas */
   }
 }
 
@@ -392,6 +392,3 @@ body {
     font-size: 24px;
   }
 }
-
-
-
