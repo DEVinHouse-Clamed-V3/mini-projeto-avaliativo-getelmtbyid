@@ -128,7 +128,6 @@ function mostrarProdutos() {
   }
 }
 
-//document.addEventListener("DOMContentLoaded", mostrarProdutos);
 
 // carregando produdosIniciais vindos do json
 
@@ -142,12 +141,13 @@ function carregarProdutosIniciais() {
       .then((produtosIniciais) => {
         localStorage.setItem("produtos", JSON.stringify(produtosIniciais));
         mostrarProdutos()
-      });
+      });
+  } else {
+    mostrarProdutos()
   }
 }
 
-carregarProdutosIniciais();
-
+document.addEventListener("DOMContentLoaded", carregarProdutosIniciais);
 
 document.getElementById("foto-form").addEventListener("input", function (event) {
   document.getElementById("img-form").setAttribute("src", this.value);
@@ -207,19 +207,17 @@ function filtrarProdutos() {
     return (!nomeFiltro || nomeInclui) && (!fabricanteFiltro || fabricanteInclui) && (!categoriaFiltro || categoriaInclui);
   });
 
-  localStorage.setItem("produtosFiltrados", JSON.stringify(produtosFiltrados));
-
-  mostrarProdutosFiltrados();
+  mostrarProdutosFiltrados(produtosFiltrados);
 }
 
-function mostrarProdutosFiltrados() {
-  let produtosFiltrados = JSON.parse(localStorage.getItem("produtosFiltrados")) || [];
-
+function mostrarProdutosFiltrados(produtosFiltrados) {
+  // guarda os produtos antes de forçar os produtos filtrados
+  localStorage.setItem("produtosAntes", localStorage.getItem('produtos'));
+  // força os produtos filtrados para exibir na tela do usuario
   localStorage.setItem("produtos", JSON.stringify(produtosFiltrados));
 
   mostrarProdutos();
 
-  localStorage.setItem("produtos", JSON.stringify(produtosFiltrados));
 }
 
 document.getElementById("btn-pesquisar").addEventListener("click", filtrarProdutos);
@@ -228,12 +226,15 @@ document.getElementById("btn-limpar").addEventListener("click", function () {
   document.getElementById("filtro-nome").value = "";
   document.getElementById("filtro-fabricante").value = "";
 
+  // Volta produtos para o que era antes da filtragem
+  localStorage.setItem("produtos", localStorage.getItem('produtosAntes'));
+
   // Remover o local storage criado temporaio
-  localStorage.removeItem("produtosFiltrados");
+  localStorage.removeItem("produtosAntes");
 
   mostrarProdutos();
   // Restaura os produtos originais no localStorage
-  localStorage.setItem("produtos", JSON.stringify(produtosIniciais));
+  //localStorage.setItem("produtos", JSON.stringify(produtosIniciais));
 
   // Refresh na pagina
   location.reload();

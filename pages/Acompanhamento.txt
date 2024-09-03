@@ -3,6 +3,7 @@ Dominice:
 28/08- Criação da estrutura do projeto com o index, styles.css, scripts.js e imagens
 30/08 - funçao carregarProdutosIniciais, indentação do js, - Apresentar a imagem no cadastro, - Criar um alterar produtos,
 - Estilização do Listar produtos
+03/09 - Arrumei função de mostrarProdutosFiltrados, tirado erro de CORS
 
 
 Gustavo:
